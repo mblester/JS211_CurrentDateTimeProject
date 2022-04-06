@@ -15,11 +15,19 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
-
+const convertNumbertoString = (str) => {
+  const result = Number(str)
+ return result
+}
+console.log(convertNumbertoString("5"))
 
 
 // Write a JavaScript program to convert a string to the number.
-
+const convertStringtoNum = (num) => {
+  const result = String(num)
+  return result
+}
+console.log(convertStringtoNum(10))
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -30,10 +38,22 @@ const displayDate = () => {
   // * NaN
   // * String
   
+  function checkDataType(element) {
+    return typeof element
+  }
+
+  console.log(checkDataType(true))
+  console.log(checkDataType(16))
+  console.log(checkDataType('what is this'))
 
   
 // Write a JavaScript program that adds 2 numbers together.
+let results = add();
+console.log("R", results);
 
+function add() {
+  return 3 + 4;
+}
 
 
 // Write a JavaScript program that runs only when 2 things are true.
@@ -58,9 +78,11 @@ const displayDate = () => {
 // 6. go to `index.html` 
 // 7. create inputs, buttons and event listeners that render the code blocks you built above to the DOM.
 
+const numInput = document.getElementById("num2str")
+const result convertNumbertoString(num2str.value)
 
-
-
+num2str.value
+console.log(results)
 // Additional Resources
 // Video1: https://player.vimeo.com/video/377147232
 // Video2: https://www.youtube.com/embed/bkvH28PXLWc
